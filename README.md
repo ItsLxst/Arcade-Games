@@ -1,57 +1,55 @@
 # 🕹️ Arcade Games
 
-Welcome to the **Arcade Games** repository! This project is a collection of classic retro games rebuilt using Python and the Turtle graphics library. 
+A collection of classic retro games built with Python and the Turtle graphics library.
 
-The goal is to recreate the nostalgic feeling of old-school arcade cabinets while mastering Python's Object-Oriented Programming (OOP) concepts.
+---
 
-## 📂 Game Status
+## ✨ Overview
 
-Here is the current development status of the games in this collection:
+This repository brings together three retro-inspired arcade games that were developed to practice object-oriented programming, event handling, and game development fundamentals while recreating the feel of classic arcade machines. 
+Each game focuses on different gameplay mechanics while reinforcing core Python programming concepts.
 
-| Game | Status | Description |
-| :--- | :---: | :--- |
-| **🐍 Snake Game** | ✅ **Completed** | The classic snake game. Control the snake, eat food, and grow without hitting the walls or your own tail. |
-| **🏓 Pong Game** | ✅ **Completed** | The famous 2D table tennis simulation. Two players, one ball, endless competition. |
-| **🐢 Crossy Turtle** | ✅ **Completed** | Help the turtle cross a busy highway filled with fast-moving cars. Avoid getting squished! |
+---
 
-## 🎮 Game Controls
+## 📂 Included Projects
 
-Don't dive into the code! Here is how you play the games:
+| Project | Description | README |
+|----------|-------------|--------|
+| 🐍 **Snake Game** | Control the snake, eat food, and grow without hitting the walls or your own tail. | [View](./Snake_Game/README.md) |
+| 🏓 **Pong Game** | A classic two-player table tennis game built with Python and Turtle graphics. | [View](./Pong_Game/README.md) |
+| 🐢 **Crossy Turtle** | Help the turtle cross a busy highway while avoiding incoming traffic. | [View](./Crossy_Turtle/README.md) |
 
-| Game | Player | Keys | Action |
-| :--- | :--- | :--- | :--- |
-| **🐍 Snake Game** | Single Player | **Arrow Keys** (⬆️ ⬇️ ⬅️ ➡️) | Move the Snake |
-| **🏓 Pong Game** | Right Player | **Arrow Keys** (⬆️ ⬇️) | Move Paddle Up / Down |
-|  | Left Player | **w / s** Keys | Move Paddle Up / Down |
-| **🐢 Crossy Turtle** | Single Player | **Arrow Key** (⬆️) | Move the Turtle |
+---
 
-## 🚀 How to Run
+## 🛠️ Technologies
+
+* **Python 3.x**
+* **Object-Oriented Programming (OOP)**
+* **Turtle Graphics Library** (Built-in)
+
+---
+
+## 🚀 Getting Started
 
 You need **Python 3.x** installed on your machine to run these games. Since they use the standard `turtle` library, no external installations are required.
 
 1. **Clone the repository:**
-
-    git clone https://github.com/ItsLxst/Arcade-Games.git
-
+  ```bash
+  git clone https://github.com/ItsLxst/Arcade-Games.git
+  ```
 2. **Navigate to the specific game folder:**
-   
-   *For Snake Game:*
-    
-    cd Snake_Game
-
-   *For Pong Game:*
-    
-    cd Pong_Game
-
-   *For Crossy Turtle:*
-
-   cd Crossy_Turtle
-
+   ```bash
+   cd Snake_Game
+   ```
+   (Replace Snake_Game with Pong_Game or Crossy_Turtle if needed.)
 3. **Run the game:**
+  ```bash
+   python game.py
+   ```
+---
 
-   (The command is the same for all games)
+## 📚 What I Learned
 
-    python game.py
-
-------------------------------
-This repository is my journey from 100 Days of Code: The Complete Python Pro Bootcamp
+* **Object-Oriented Programming (OOP):** Building modular game components using classes and objects.
+* **Game Logic & Physics:** Implementing collision detection, score tracking, and coordinate boundaries.
+* **Event Handling:** Binding key presses to trigger real-time actions and game movements.
