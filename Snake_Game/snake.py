@@ -1,9 +1,12 @@
 from turtle import Turtle
-POSITIONS = [(0,0),(-20,0),(-40,0)]
+
+POSITIONS = [(0, 0), (-20, 0), (-40, 0)]
 UP = 90
 DOWN = 270
 RIGHT = 0
 LEFT = 180
+
+
 class Snake:
 
     def __init__(self):
@@ -12,19 +15,19 @@ class Snake:
         self.head = self.snake_body[0]
 
     def create_snake(self):
-         for position in POSITIONS:
+        for position in POSITIONS:
             self.add_body(position)
 
-    def add_body(self,position):
-        lost = Turtle(shape="square")
-        lost.color("white")
-        lost.penup()
-        lost.goto(position)
-        self.snake_body.append(lost)
+    def add_body(self, position):
+        segment = Turtle(shape="square")
+        segment.color("white")
+        segment.penup()
+        segment.goto(position)
+        self.snake_body.append(segment)
 
     def reset_snake(self):
         for body in self.snake_body:
-            body.goto(1000,1000)
+            body.goto(1000, 1000)
         self.snake_body.clear()
         self.create_snake()
         self.head = self.snake_body[0]
@@ -33,10 +36,10 @@ class Snake:
         self.add_body(self.snake_body[-1].position())
 
     def move(self):
-        for snake in range(len(self.snake_body) - 1, 0, -1):
-            new_x = self.snake_body[snake - 1].xcor()
-            new_y = self.snake_body[snake - 1].ycor()
-            self.snake_body[snake].goto(new_x, new_y)
+        for index in range(len(self.snake_body) - 1, 0, -1):
+            new_x = self.snake_body[index - 1].xcor()
+            new_y = self.snake_body[index - 1].ycor()
+            self.snake_body[index].goto(new_x, new_y)
         self.head.forward(20)
 
     def up(self):
