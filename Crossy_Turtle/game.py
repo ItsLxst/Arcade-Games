@@ -38,7 +38,7 @@ while game_on:
             scoreboard.game_over()
 
     # Player reached the finish line
-    if player.at_finish():
+    if player.at_finish_line():
         player.go_start()
         car_manage.level_up()
         scoreboard.increase_level()
