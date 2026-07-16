@@ -1,5 +1,9 @@
 from turtle import Turtle
 
+INITIAL_MOVE_DISTANCE = 10
+INITIAL_MOVE_SPEED = 0.1
+
+
 class Ball(Turtle):
 
     def __init__(self):
@@ -7,9 +11,9 @@ class Ball(Turtle):
         self.shape("circle")
         self.color("white")
         self.penup()
-        self.x_move = 10
-        self.y_move = 10
-        self.move_speed = 0.1
+        self.x_move = INITIAL_MOVE_DISTANCE
+        self.y_move = INITIAL_MOVE_DISTANCE
+        self.move_speed = INITIAL_MOVE_SPEED
 
     def move(self):
         new_x = self.xcor() + self.x_move
@@ -25,6 +29,6 @@ class Ball(Turtle):
         self.move_speed *= 0.9
 
     def reset_pos(self):
-        self.goto(0,0)
-        self.move_speed = 0.1
+        self.goto(0, 0)
+        self.move_speed = INITIAL_MOVE_SPEED
         self.x_bounce()
